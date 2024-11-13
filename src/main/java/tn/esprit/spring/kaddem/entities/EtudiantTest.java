@@ -26,7 +26,7 @@ class EtudiantTest {
         assertEquals("Doe", etudiant.getPrenomE(), "PrenomE should be initialized correctly");
         assertEquals(Option.GAMIX, etudiant.getOp(), "Option should be initialized correctly");
     }
-
+ 
     // Test setting and getting the departement
     @Test
     void testSetAndGetDepartement() {
