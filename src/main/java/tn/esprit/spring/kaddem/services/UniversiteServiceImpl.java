@@ -47,7 +47,7 @@ return  u;
     }
 
     public Set<Departement> retrieveDepartementsByUniversite(Integer idUniversite){
-Universite u=universiteRepository.findById(idUniversite).orElse(null);
-return u.getDepartements();
+        Universite u=universiteRepository.findById(idUniversite).orElse(null);
+        return u.getDepartements();
     }
 }
