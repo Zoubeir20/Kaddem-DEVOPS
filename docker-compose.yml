@@ -1,7 +1,7 @@
 services:
   # Spring Boot Application
   app:
-    image: mohamedamineennour/kaddem:0.1.1
+    image: mohamedamineennour/kaddem:0.0.1
     container_name: kaddem-app
     ports:
       - "8089:8089"  # Exposing the Spring Boot app port
@@ -13,6 +13,7 @@ services:
       - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.MySQLDialect
     networks:
       - appnet
+    restart: on-failure
     depends_on:
       - mysql
 
@@ -20,7 +21,7 @@ services:
   mysql:
     image: mysql:5.7
     container_name: mysql-db
-    restart: on-failure
+    restart: unless-stopped
     environment:
       - MYSQL_ROOT_PASSWORD=0000
       - MYSQL_DATABASE=kaddem
