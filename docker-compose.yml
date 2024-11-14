@@ -23,7 +23,7 @@ services:
     container_name: mysql-db
     restart: unless-stopped
     environment:
-      - MYSQL_ROOT_PASSWORD=0000
+      - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=kaddem
     ports:
       - "3306:3306"
