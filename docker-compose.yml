@@ -6,7 +6,7 @@ services:
     ports:
       - "8089:8089"  # Exposing the Spring Boot app port
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql-db:3306/kaddem\db?&createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql-db:3306/kaddem_db?&createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=root
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
@@ -26,7 +26,7 @@ services:
     restart: unless-stopped
     environment:
       - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=kaddem
+      - MYSQL_DATABASE=kaddem_db
     ports:
       - "3306:3306"
     networks:
