@@ -14,6 +14,8 @@ services:
     networks:
       - appnet
     restart: on-failure
+    stdin_open: true
+    tty: true
     depends_on:
       - mysql-db
 
@@ -30,12 +32,11 @@ services:
     networks:
       - appnet
     volumes:
-      - mysql-data:/var/lib/mysql
+      - db:/var/lib/mysql
 
 #Persistant volume for MySQL data
 volumes:
-  mysql-data:
-    driver: local
+  db:
 networks:
   appnet:
     driver: bridge
