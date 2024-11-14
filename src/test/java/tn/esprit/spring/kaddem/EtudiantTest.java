@@ -1,13 +1,16 @@
-package tn.esprit.spring.kaddem.entities;
+package tn.esprit.spring.kaddem;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import tn.esprit.spring.kaddem.entities.*;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class EtudiantTest {
 

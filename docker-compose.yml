@@ -14,7 +14,7 @@ services:
   kaddem-timesheet:
     depends_on:
       - mysqldb
-    image: mouradhassini/achat-image:1.0.0
+    image: zoubeirezzine/kaddem-image:1.0.0
     #build : ./
     restart: on-failure
     ports:
