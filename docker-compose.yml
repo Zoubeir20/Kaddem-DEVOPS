@@ -1,7 +1,7 @@
 services:
   # Spring Boot Application
   app:
-    image: lbrens/alpine:0.0.1
+    image: lbrens/alpine:1.0.0
     container_name: kaddem-app
     ports:
       - "8089:8089"  # Exposing the Spring Boot app port
