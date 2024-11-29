@@ -1,6 +1,11 @@
-package tn.esprit.spring.kaddem.entities;
+package tn.esprit.spring.kaddem;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import tn.esprit.spring.kaddem.entities.DetailEquipe;
+import tn.esprit.spring.kaddem.entities.Equipe;
+import tn.esprit.spring.kaddem.entities.Etudiant;
+import tn.esprit.spring.kaddem.entities.Niveau;
+
 import java.util.HashSet;
 import java.util.Set;
 import static org.junit.jupiter.api.Assertions.*;
